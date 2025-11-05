@@ -3,7 +3,7 @@
 > Building reliable software through rigorous testing and automation
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-green?style=for-the-badge&logo=github-pages)](https://priyasanna.github.io/priyasolai/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/lakshmipriya-solai)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/lakshmipriya-solai-49bb7250)
 [![GitHub Stars](https://img.shields.io/github/stars/priyasanna/priyasol.github.io?style=for-the-badge&logo=github)](https://github.com/priyasanna/priyasol.github.io/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/priyasanna/priyasol.github.io?style=for-the-badge&logo=git)](https://github.com/priyasanna/priyasol.github.io/commits/main)
 
@@ -374,7 +374,7 @@ MIT License - feel free to use this template for your own portfolio!
     author = {Lakshmipriya Solai},
     title = {{Test Automation Quality Engineering Portfolio}},
     url = {https://priyasanna.github.io/priyasolai/},
-    linkedin = {https://linkedin.com/in/lakshmipriya-solai},
+    linkedin = {https://linkedin.com/in/lakshmipriya-solai-49bb7250},
     github = {https://github.com/priyasanna},
     year = {2025}
 }
