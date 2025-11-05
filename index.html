@@ -673,18 +673,18 @@ Data is stored locally and not shared with any third parties.
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #2d3748;
-            --secondary: #4a5568;
-            --accent: #5a7a9a;
-            --neon-blue: #6b8fa8;
-            --neon-purple: #6b7a8f;
-            --neon-green: #7a8b7a;
-            --light: #e2e8f0;
-            --dark: #1a202c;
-            --card-bg: rgba(45, 55, 72, 0.9);
-            --gradient-primary: linear-gradient(135deg, #4a5568 0%, #5a7a9a 100%);
-            --gradient-secondary: linear-gradient(135deg, #6b7a8f 0%, #5a7a9a 100%);
-            --gradient-accent: linear-gradient(135deg, #5a7a9a 0%, #6b8fa8 100%);
+            --primary: #8b7355;
+            --secondary: #a0826d;
+            --accent: #6b5d4f;
+            --neon-blue: #9d8166;
+            --neon-purple: #8b7355;
+            --neon-green: #7a6b5a;
+            --light: #ffffff;
+            --dark: #1a1a1a;
+            --card-bg: rgba(245, 240, 230, 0.95);
+            --gradient-primary: linear-gradient(135deg, #a0826d 0%, #8b7355 100%);
+            --gradient-secondary: linear-gradient(135deg, #9d8166 0%, #8b7355 100%);
+            --gradient-accent: linear-gradient(135deg, #8b7355 0%, #6b5d4f 100%);
         }
         
         * {
@@ -695,9 +695,9 @@ Data is stored locally and not shared with any third parties.
         }
         
         body {
-            background: linear-gradient(135deg, #2d3748 0%, #4a5568 25%, #5a7a9a 50%, #4a5568 75%, #2d3748 100%);
+            background: linear-gradient(135deg, #d4c5b8 0%, #c9b8a8 25%, #b8a895 50%, #c9b8a8 75%, #d4c5b8 100%);
             background-attachment: fixed;
-            color: var(--light);
+            color: var(--dark);
             line-height: 1.6;
             position: relative;
             overflow-x: hidden;
@@ -711,9 +711,9 @@ Data is stored locally and not shared with any third parties.
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 20% 80%, rgba(90, 122, 154, 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(74, 85, 104, 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, rgba(107, 143, 168, 0.05) 0%, transparent 50%);
+                radial-gradient(circle at 20% 80%, rgba(139, 115, 85, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(160, 130, 109, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(107, 93, 79, 0.03) 0%, transparent 50%);
             pointer-events: none;
             z-index: -1;
         }
@@ -727,15 +727,15 @@ Data is stored locally and not shared with any third parties.
         
         header {
             background: 
-                linear-gradient(135deg, rgba(45, 55, 72, 0.85) 0%, rgba(74, 85, 104, 0.85) 100%);
+                linear-gradient(135deg, rgba(212, 197, 184, 0.95) 0%, rgba(201, 184, 168, 0.95) 100%);
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             backdrop-filter: blur(5px);
             padding: 2rem 0;
             text-align: center;
-            border-bottom: 2px solid var(--neon-blue);
-            box-shadow: 0 8px 32px rgba(90, 122, 154, 0.2);
+            border-bottom: 2px solid var(--accent);
+            box-shadow: 0 8px 32px rgba(107, 93, 79, 0.2);
             position: relative;
         }
         
@@ -747,7 +747,7 @@ Data is stored locally and not shared with any third parties.
             transform: translate(-50%, -50%);
             font-size: 15rem;
             font-weight: 900;
-            color: rgba(107, 143, 168, 0.08);
+            color: rgba(139, 115, 85, 0.08);
             letter-spacing: 0.5rem;
             z-index: 0;
             pointer-events: none;
@@ -762,7 +762,7 @@ Data is stored locally and not shared with any third parties.
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(90deg, transparent, rgba(107, 143, 168, 0.1), transparent);
+            background: linear-gradient(90deg, transparent, rgba(139, 115, 85, 0.08), transparent);
             animation: shimmer 3s ease-in-out infinite;
             z-index: 1;
         }
@@ -860,9 +860,9 @@ Data is stored locally and not shared with any third parties.
             position: absolute;
             inset: 2px;
             background: linear-gradient(135deg, 
-                rgba(0, 245, 255, 0.15) 0%, 
-                rgba(191, 0, 255, 0.1) 50%, 
-                rgba(0, 245, 255, 0.15) 100%);
+                rgba(139, 115, 85, 0.1) 0%, 
+                rgba(160, 130, 109, 0.08) 50%, 
+                rgba(139, 115, 85, 0.1) 100%);
             clip-path: polygon(
                 20% 0%, 80% 0%, 100% 20%, 100% 80%, 
                 80% 100%, 20% 100%, 0% 80%, 0% 20%
@@ -881,11 +881,11 @@ Data is stored locally and not shared with any third parties.
             position: absolute;
             inset: -4px;
             background: linear-gradient(45deg, 
-                rgba(0, 245, 255, 0.8) 0%, 
-                rgba(120, 58, 237, 0.6) 25%,
-                rgba(191, 0, 255, 0.8) 50%,
-                rgba(120, 58, 237, 0.6) 75%,
-                rgba(0, 245, 255, 0.8) 100%);
+                rgba(139, 115, 85, 0.6) 0%, 
+                rgba(160, 130, 109, 0.5) 25%,
+                rgba(107, 93, 79, 0.6) 50%,
+                rgba(160, 130, 109, 0.5) 75%,
+                rgba(139, 115, 85, 0.6) 100%);
             clip-path: polygon(
                 20% 0%, 80% 0%, 100% 20%, 100% 80%, 
                 80% 100%, 20% 100%, 0% 80%, 0% 20%
@@ -907,7 +907,7 @@ Data is stored locally and not shared with any third parties.
             width: 20px;
             height: 20px;
             border: 2px solid var(--neon-blue);
-            background: rgba(0, 245, 255, 0.1);
+            background: rgba(139, 115, 85, 0.1);
         }
         
         .profile-corners::before {
@@ -979,28 +979,28 @@ Data is stored locally and not shared with any third parties.
         .profile h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
-            color: var(--light);
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            color: var(--dark);
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
             position: relative;
             z-index: 10;
+            font-weight: 700;
         }
         
         .profile .subtitle {
             font-size: 1.4rem;
             font-weight: 700;
-            color: var(--neon-blue);
+            color: var(--accent);
             margin-bottom: 0.8rem;
-            text-shadow: 
-                1px 1px 4px rgba(0, 0, 0, 0.8),
-                0 0 10px rgba(0, 245, 255, 0.4);
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
             position: relative;
             z-index: 10;
         }
         
         .tagline {
             font-size: 1.2rem;
-            color: var(--accent);
+            color: var(--dark);
             margin-bottom: 1rem;
+            opacity: 0.9;
         }
         
         /* ELEGANT FUTURISTIC METALLIC CINEMATIC EFFECT */
@@ -1091,7 +1091,7 @@ Data is stored locally and not shared with any third parties.
             right: 0;
             bottom: 0;
             background: radial-gradient(circle at 20% 80%, rgba(107, 143, 168, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(139, 233, 253, 0.1) 0%, transparent 50%);
+                        radial-gradient(circle at 80% 20%, rgba(139, 115, 85, 0.08) 0%, transparent 50%);
             pointer-events: none;
         }
 
@@ -1195,7 +1195,7 @@ Data is stored locally and not shared with any third parties.
 
         .guess-btn:hover {
             transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 10px 25px rgba(139, 233, 253, 0.4);
+            box-shadow: 0 10px 25px rgba(139, 115, 85, 0.3);
         }
 
         .guess-btn:active {
@@ -1259,7 +1259,7 @@ Data is stored locally and not shared with any third parties.
         }
 
         .feedback {
-            background: rgba(139, 233, 253, 0.1);
+            background: rgba(139, 115, 85, 0.1);
             border-radius: 12px;
             padding: 1.5rem;
             margin: 1.5rem 0;
@@ -1306,7 +1306,7 @@ Data is stored locally and not shared with any third parties.
         .game-stats {
             margin-top: 2rem;
             padding: 1.5rem;
-            background: rgba(139, 233, 253, 0.05);
+            background: rgba(139, 115, 85, 0.05);
             border-radius: 10px;
             border-left: 4px solid var(--accent);
         }
@@ -1350,25 +1350,25 @@ Data is stored locally and not shared with any third parties.
             25% { 
                 opacity: 0.3; 
                 transform: translateY(50px) scale(1.5) rotateZ(20deg);
-                filter: drop-shadow(0 0 30px rgba(0, 245, 255, 0.8)) blur(10px) brightness(2);
+                filter: drop-shadow(0 0 30px rgba(139, 115, 85, 0.4)) blur(10px) brightness(1.2);
                 letter-spacing: 15px;
             }
             50% { 
                 opacity: 0.7; 
                 transform: translateY(20px) scale(1.2) rotateZ(5deg);
-                filter: drop-shadow(0 0 20px rgba(0, 245, 255, 0.6)) blur(5px) brightness(1.5);
+                filter: drop-shadow(0 0 20px rgba(139, 115, 85, 0.3)) blur(5px) brightness(1.1);
                 letter-spacing: 12px;
             }
             75% { 
                 opacity: 0.9; 
                 transform: translateY(5px) scale(1.05) rotateZ(1deg);
-                filter: drop-shadow(0 0 15px rgba(0, 245, 255, 0.4)) blur(2px) brightness(1.2);
+                filter: drop-shadow(0 0 15px rgba(139, 115, 85, 0.25)) blur(2px) brightness(1.05);
                 letter-spacing: 10px;
             }
             100% { 
                 opacity: 1; 
                 transform: translateY(0) scale(1) rotateZ(0);
-                filter: drop-shadow(0 0 10px rgba(0, 245, 255, 0.3)) blur(0px) brightness(1);
+                filter: drop-shadow(0 0 10px rgba(139, 115, 85, 0.2)) blur(0px) brightness(1);
                 letter-spacing: 8px;
             }
         }
@@ -1381,17 +1381,17 @@ Data is stored locally and not shared with any third parties.
         }
         
         .social-links a {
-            color: var(--light);
+            color: var(--accent);
             font-size: 1.5rem;
             transition: all 0.3s;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
             position: relative;
             z-index: 10;
         }
         
         .social-links a:hover {
-            color: var(--neon-blue);
-            text-shadow: 0 0 15px var(--neon-blue);
+            color: var(--dark);
+            text-shadow: 0 0 5px rgba(139, 115, 85, 0.5);
             transform: scale(1.2);
         }
         
@@ -1403,28 +1403,25 @@ Data is stored locally and not shared with any third parties.
             font-size: 2.2rem;
             font-weight: 900;
             font-family: 'Arial Black', 'Helvetica', sans-serif;
-            color: #e8e8e8;
+            color: var(--dark);
             text-transform: uppercase;
             letter-spacing: 4px;
             margin-bottom: 2rem;
             text-align: center;
             position: relative;
             text-shadow: 
-                2px 2px 0px #4a4a4a,
-                4px 4px 0px #3a3a3a,
-                6px 6px 0px #2a2a2a,
-                8px 8px 15px rgba(0, 0, 0, 0.8),
-                0 0 20px rgba(0, 245, 255, 0.3);
+                1px 1px 2px rgba(255, 255, 255, 0.5),
+                2px 2px 4px rgba(0, 0, 0, 0.2);
             background: linear-gradient(135deg, 
-                #f0f0f0 0%, 
-                #d4d4d4 25%, 
-                #b8b8b8 50%, 
-                #a0a0a0 75%, 
-                #8a8a8a 100%);
+                #2a2a2a 0%, 
+                #3a3a3a 25%, 
+                #4a4a4a 50%, 
+                #3a3a3a 75%, 
+                #2a2a2a 100%);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 0 8px rgba(0, 245, 255, 0.2));
+            filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
         }
         
         h2::before {
@@ -1433,7 +1430,7 @@ Data is stored locally and not shared with any third parties.
             top: 0;
             left: 50%;
             transform: translateX(-50%);
-            color: rgba(0, 245, 255, 0.15);
+            color: rgba(139, 115, 85, 0.1);
             text-shadow: none;
             z-index: -1;
             transform: translateX(-50%) translate(2px, 2px);
@@ -1444,12 +1441,12 @@ Data is stored locally and not shared with any third parties.
             display: block;
             width: 80px;
             height: 4px;
-            background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+            background: linear-gradient(90deg, var(--accent), var(--secondary));
             margin: 15px auto;
             border-radius: 2px;
             box-shadow: 
-                0 0 10px rgba(107, 143, 168, 0.3),
-                0 0 20px rgba(90, 122, 154, 0.2);
+                0 0 10px rgba(139, 115, 85, 0.3),
+                0 0 20px rgba(107, 93, 79, 0.2);
         }
         
         .about-content {
@@ -1468,20 +1465,19 @@ Data is stored locally and not shared with any third parties.
             margin-bottom: 1.5rem;
             font-size: 1.2rem;
             line-height: 1.8;
-            color: var(--light);
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            color: var(--dark);
         }
 
         .expertise-areas {
             margin: 2rem 0;
             padding: 1.5rem;
-            background: rgba(68, 71, 90, 0.3);
+            background: rgba(245, 240, 230, 0.7);
             border-radius: 12px;
-            border: 1px solid rgba(120, 58, 237, 0.2);
+            border: 1px solid rgba(139, 115, 85, 0.3);
         }
 
         .expertise-areas h3 {
-            color: var(--secondary);
+            color: var(--dark);
             margin-bottom: 1rem;
             font-size: 1.3rem;
             text-align: center;
@@ -1495,24 +1491,24 @@ Data is stored locally and not shared with any third parties.
         }
 
         .expertise-tag {
-            background: rgba(120, 58, 237, 0.2);
-            color: var(--light);
+            background: rgba(139, 115, 85, 0.2);
+            color: var(--dark);
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-size: 0.9rem;
             font-weight: 500;
-            border: 1px solid rgba(120, 58, 237, 0.3);
+            border: 1px solid rgba(139, 115, 85, 0.4);
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
         }
 
         .expertise-tag:hover {
-            background: rgba(120, 58, 237, 0.4);
-            border-color: var(--secondary);
+            background: rgba(139, 115, 85, 0.4);
+            border-color: var(--accent);
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(120, 58, 237, 0.3);
-            color: white;
+            box-shadow: 0 4px 12px rgba(139, 115, 85, 0.3);
+            color: var(--dark);
         }
 
         .expertise-tag:not([href]) {
@@ -1605,22 +1601,24 @@ Data is stored locally and not shared with any third parties.
             backdrop-filter: blur(10px);
             padding: 1.5rem;
             border-radius: 15px;
-            border: 1px solid rgba(107, 143, 168, 0.2);
+            border: 1px solid rgba(139, 115, 85, 0.3);
             box-shadow: 
-                0 8px 32px rgba(0, 0, 0, 0.3),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+                0 8px 32px rgba(0, 0, 0, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.5);
             transition: all 0.3s ease;
+            color: var(--dark);
         }
         
         .skill-category:hover {
             transform: translateY(-5px);
-            border-color: var(--neon-blue);
+            border-color: var(--accent);
             box-shadow: 
-                0 12px 40px rgba(0, 0, 0, 0.4),
-                0 0 20px rgba(107, 143, 168, 0.2);
+                0 12px 40px rgba(0, 0, 0, 0.2),
+                0 0 20px rgba(139, 115, 85, 0.2);
         }
         
         .skill-category h3 {
+            color: var(--dark);
             background: var(--gradient-accent);
             background-clip: text;
             -webkit-background-clip: text;
@@ -1640,11 +1638,15 @@ Data is stored locally and not shared with any third parties.
             align-items: center;
         }
         
+        .skill-list li {
+            color: var(--dark);
+        }
+        
         .skill-list li::before {
             content: '▶';
-            color: var(--neon-green);
+            color: var(--accent);
             margin-right: 10px;
-            text-shadow: 0 0 5px var(--neon-green);
+            font-size: 0.8rem;
         }
         
         .demo-grid {
@@ -1661,10 +1663,11 @@ Data is stored locally and not shared with any third parties.
             overflow: hidden;
             transition: all 0.4s ease;
             box-shadow: 
-                0 8px 32px rgba(0, 0, 0, 0.3),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(120, 58, 237, 0.3);
+                0 8px 32px rgba(0, 0, 0, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(139, 115, 85, 0.3);
             position: relative;
+            color: var(--dark);
         }
         
         .demo-card::before {
@@ -1685,8 +1688,8 @@ Data is stored locally and not shared with any third parties.
         .demo-card:hover {
             transform: translateY(-8px) scale(1.02);
             box-shadow: 
-                0 20px 60px rgba(0, 0, 0, 0.4),
-                0 0 30px rgba(120, 58, 237, 0.4);
+                0 20px 60px rgba(0, 0, 0, 0.2),
+                0 0 30px rgba(139, 115, 85, 0.3);
         }
         
         .demo-card:hover::before {
@@ -1705,17 +1708,17 @@ Data is stored locally and not shared with any third parties.
         
         .demo-header {
             background: linear-gradient(135deg, 
-                #2a2a2a 0%, 
-                #3a3a3a 25%, 
-                #4a4a4a 50%, 
-                #3a3a3a 75%, 
-                #2a2a2a 100%);
+                var(--accent) 0%, 
+                var(--secondary) 25%, 
+                var(--accent) 50%, 
+                var(--secondary) 75%, 
+                var(--accent) 100%);
             padding: 1.5rem;
             text-align: center;
-            color: #e8e8e8;
+            color: var(--light);
             position: relative;
             overflow: hidden;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
         
         .demo-header::before {
@@ -1727,9 +1730,9 @@ Data is stored locally and not shared with any third parties.
             height: 100%;
             background: linear-gradient(90deg, 
                 transparent, 
-                rgba(0, 245, 255, 0.3), 
-                rgba(191, 0, 255, 0.3), 
-                rgba(0, 245, 255, 0.3), 
+                rgba(139, 115, 85, 0.2), 
+                rgba(160, 130, 109, 0.2), 
+                rgba(139, 115, 85, 0.2), 
                 transparent);
             transition: left 0.5s ease;
         }
@@ -1742,8 +1745,8 @@ Data is stored locally and not shared with any third parties.
                 repeating-linear-gradient(45deg,
                     transparent 0px,
                     transparent 2px,
-                    rgba(0, 245, 255, 0.08) 2px,
-                    rgba(0, 245, 255, 0.08) 4px);
+                    rgba(139, 115, 85, 0.05) 2px,
+                    rgba(139, 115, 85, 0.05) 4px);
         }
         
         .demo-card:hover .demo-header::before {
@@ -1773,11 +1776,11 @@ Data is stored locally and not shared with any third parties.
         
         .demo-content p {
             margin-bottom: 1.5rem;
-            color: var(--light);
+            color: var(--dark);
         }
         
         .demo-example {
-            background: #1e1e2e;
+            background: rgba(245, 240, 230, 0.8);
             padding: 1rem;
             border-radius: 8px;
             margin-bottom: 1.5rem;
@@ -1785,16 +1788,17 @@ Data is stored locally and not shared with any third parties.
         }
         
         .demo-example h4 {
-            color: var(--accent);
+            color: var(--dark);
             margin-bottom: 0.5rem;
             font-size: 0.9rem;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-weight: 600;
         }
         
         .demo-example code {
-            background: #2d2b55;
-            color: var(--light);
+            background: rgba(139, 115, 85, 0.2);
+            color: var(--dark);
             padding: 0.5rem;
             border-radius: 4px;
             display: block;
@@ -1858,10 +1862,11 @@ Data is stored locally and not shared with any third parties.
             overflow: hidden;
             transition: all 0.4s ease;
             box-shadow: 
-                0 8px 32px rgba(0, 0, 0, 0.3),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(107, 143, 168, 0.2);
+                0 8px 32px rgba(0, 0, 0, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(139, 115, 85, 0.3);
             position: relative;
+            color: var(--dark);
         }
         
         .project-card::before {
@@ -1869,7 +1874,7 @@ Data is stored locally and not shared with any third parties.
             position: absolute;
             inset: 0;
             border-radius: 15px;
-            background: linear-gradient(135deg, rgba(107, 143, 168, 0.1), rgba(90, 122, 154, 0.1));
+            background: linear-gradient(135deg, rgba(139, 115, 85, 0.1), rgba(160, 130, 109, 0.1));
             opacity: 0;
             transition: opacity 0.3s ease;
             pointer-events: none;
@@ -1879,9 +1884,9 @@ Data is stored locally and not shared with any third parties.
         .project-card:hover {
             transform: translateY(-8px) scale(1.02);
             box-shadow: 
-                0 20px 60px rgba(0, 0, 0, 0.4),
-                0 0 30px rgba(107, 143, 168, 0.2);
-            border-color: var(--neon-blue);
+                0 20px 60px rgba(0, 0, 0, 0.2),
+                0 0 30px rgba(139, 115, 85, 0.3);
+            border-color: var(--accent);
         }
         
         .project-card:hover::before {
@@ -1896,19 +1901,19 @@ Data is stored locally and not shared with any third parties.
         .project-img {
             height: 180px;
             background: linear-gradient(135deg, 
-                #2a2a2a 0%, 
-                #3a3a3a 25%, 
-                #4a4a4a 50%, 
-                #3a3a3a 75%, 
-                #2a2a2a 100%);
+                var(--accent) 0%, 
+                var(--secondary) 25%, 
+                var(--accent) 50%, 
+                var(--secondary) 75%, 
+                var(--accent) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #e8e8e8;
+            color: var(--light);
             font-size: 3rem;
             position: relative;
             overflow: hidden;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
         
         .project-img::before {
@@ -1920,9 +1925,9 @@ Data is stored locally and not shared with any third parties.
             height: 100%;
             background: linear-gradient(90deg, 
                 transparent, 
-                rgba(0, 245, 255, 0.2), 
-                rgba(191, 0, 255, 0.2), 
-                rgba(0, 245, 255, 0.2), 
+                rgba(245, 240, 230, 0.2), 
+                rgba(212, 197, 184, 0.2), 
+                rgba(245, 240, 230, 0.2), 
                 transparent);
             transition: left 0.6s ease;
         }
@@ -1935,12 +1940,12 @@ Data is stored locally and not shared with any third parties.
                 repeating-linear-gradient(45deg,
                     transparent 0px,
                     transparent 2px,
-                    rgba(0, 245, 255, 0.05) 2px,
-                    rgba(0, 245, 255, 0.05) 4px),
+                    rgba(245, 240, 230, 0.05) 2px,
+                    rgba(245, 240, 230, 0.05) 4px),
                 linear-gradient(135deg, 
-                    rgba(0, 245, 255, 0.1) 0%, 
+                    rgba(245, 240, 230, 0.1) 0%, 
                     transparent 50%, 
-                    rgba(191, 0, 255, 0.1) 100%);
+                    rgba(212, 197, 184, 0.1) 100%);
         }
         
         .project-card:hover .project-img::before {
@@ -1949,22 +1954,25 @@ Data is stored locally and not shared with any third parties.
         
         .project-card:hover .project-img {
             text-shadow: 
-                2px 2px 8px rgba(0, 0, 0, 0.8),
-                0 0 15px rgba(0, 245, 255, 0.5);
+                1px 1px 2px rgba(0, 0, 0, 0.5),
+                0 0 10px rgba(245, 240, 230, 0.3);
         }
         
         .project-content {
             padding: 1.5rem;
+            color: var(--dark);
         }
         
         .project-content h3 {
-            color: var(--accent);
+            color: var(--dark);
             margin-bottom: 0.8rem;
         }
         
         .project-content p {
             margin-bottom: 1.2rem;
             font-size: 0.95rem;
+            color: var(--dark);
+            opacity: 0.9;
         }
         
         .project-tech {
@@ -1975,11 +1983,12 @@ Data is stored locally and not shared with any third parties.
         }
         
         .tech-tag {
-            background: rgba(139, 233, 253, 0.2);
-            color: var(--accent);
+            background: rgba(139, 115, 85, 0.2);
+            color: var(--dark);
             padding: 0.3rem 0.7rem;
             border-radius: 20px;
             font-size: 0.8rem;
+            border: 1px solid rgba(139, 115, 85, 0.3);
         }
         
         .project-links {
@@ -1988,7 +1997,7 @@ Data is stored locally and not shared with any third parties.
         }
         
         .project-links a {
-            color: var(--light);
+            color: var(--accent);
             text-decoration: none;
             font-size: 0.9rem;
             display: flex;
@@ -2002,17 +2011,18 @@ Data is stored locally and not shared with any third parties.
         }
         
         .use-case-demo {
-            background: #1e1e2e;
+            background: rgba(245, 240, 230, 0.6);
             padding: 1rem;
             border-radius: 8px;
             margin: 1rem 0;
-            border-left: 4px solid var(--success);
+            border-left: 4px solid var(--accent);
         }
         
         .use-case-demo h4 {
-            color: var(--success);
+            color: var(--dark);
             margin-bottom: 0.8rem;
             font-size: 1rem;
+            font-weight: 600;
         }
         
         .use-case-demo ul {
@@ -2022,7 +2032,7 @@ Data is stored locally and not shared with any third parties.
         }
         
         .use-case-demo li {
-            color: var(--light);
+            color: var(--dark);
             margin-bottom: 0.5rem;
             font-size: 0.9rem;
         }
@@ -2036,25 +2046,32 @@ Data is stored locally and not shared with any third parties.
         }
         
         .stat-card {
-            background: #44475a;
+            background: var(--card-bg);
             padding: 1.5rem;
             border-radius: 10px;
             text-align: center;
             min-width: 200px;
             flex: 1;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(139, 115, 85, 0.3);
+            color: var(--dark);
         }
         
         .stat-card i {
             font-size: 2.5rem;
-            color: var(--secondary);
+            color: var(--accent);
             margin-bottom: 1rem;
         }
         
         .stat-card h3 {
             font-size: 2rem;
-            color: var(--accent);
+            color: var(--dark);
             margin-bottom: 0.5rem;
+        }
+        
+        .stat-card p {
+            color: var(--dark);
+            opacity: 0.8;
         }
         
         .contact-content {
@@ -2084,17 +2101,19 @@ Data is stored locally and not shared with any third parties.
         .contact-details {
             margin-top: 1.5rem;
             padding-top: 1.5rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(139, 115, 85, 0.3);
+            color: var(--dark);
         }
         
         .contact-details a {
-            color: var(--secondary);
+            color: var(--accent);
             text-decoration: none;
             transition: color 0.3s;
+            font-weight: 500;
         }
         
         .contact-details a:hover {
-            color: var(--neon-blue);
+            color: var(--dark);
             text-decoration: underline;
         }
         
@@ -2111,20 +2130,27 @@ Data is stored locally and not shared with any third parties.
         
         .btn:hover {
             transform: translateY(-3px);
-            background: #ff92d0;
+            background: var(--secondary);
+            color: var(--light);
         }
         
         footer {
-            background: var(--dark);
+            background: rgba(139, 115, 85, 0.3);
             padding: 2rem 0;
             text-align: center;
             margin-top: 3rem;
+            border-top: 2px solid rgba(139, 115, 85, 0.5);
+        }
+
+        footer p {
+            color: var(--dark);
         }
 
         .development-note {
             font-size: 0.8rem;
-            color: var(--accent);
+            color: var(--dark);
             margin-top: 1rem;
+            opacity: 0.8;
         }
         
         
